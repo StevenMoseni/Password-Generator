@@ -14,6 +14,14 @@ for(var i = 0; i<password.length; i++){
   return finalPassword
 }
 
+var lowerCaseArr = "0123456789" .split ("")
+var lowerCaseChoice = confirm("Do you want lower case?");
+if (lowerCaseChoice) {
+}else{
+}
+
+var container = document.querySelector("containter");
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
