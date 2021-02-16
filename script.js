@@ -3,9 +3,46 @@ var generateBtn = document.querySelector("#generate");
 console.log(generateBtn);
 
   function generatePassword(){
-    var finalArray = ["A", 7, "&"]
+    var finalArray = [];
 var finalPassword = "";
     
+var lowerCaseArr = "abcdefghijklmnopqrstuvwxyz" .split("");
+console.log(lowerCaseArr);
+
+var upperCaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
+console.log(upperCaseArr);
+
+var numberArr = "0123456789" .split("");
+console.log(numberArr);
+
+var specialCharArray = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" .split("");
+console.log(specialCharArray);
+
+var logicArr = [];
+console.log(logicArr);
+
+var passwordLength = prompt("Choose Password length between 8-128.");
+var lowerCaseChoice = confirm("Do you want lower case?");
+var upperCaseChoice = confirm("Do you want upper case?");
+var numberChoie = confirm("would you like to include numbers?");
+var SpechCharChoice =confirm ("Would you like to include special characters?");
+
+// console.log(passwordLength);
+var passwordLength = prompt  
+  
+}
+if (lowerCaseChoice) {
+  for(var i = 0; i < lowerCaseArr.length; i++) {
+    logicArr.push(lowerCaseArr[i]) 
+  } 
+
+
+} else if (upperCaseChoice){ 
+  for(var i = 0; i < upperCaseArr.length; i++){ 
+    logicArr.push(upperCaseArr[i])
+  }
+  
+} else if 
 
 for(var i = 0; i<password.length; i++){
   var randomNumber = Math.floor(Math.random()*finalArray.length);
@@ -15,35 +52,7 @@ for(var i = 0; i<password.length; i++){
   return finalPassword
 }
 
-var lowerCaseArr = "abcdefghijklmnopqrstuvwxyz" .split("");
-console.log(lowerCaseArr);
 
-var upperCaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
-console.log(upperCaseArr);
-
-var numberArr = "0123456789" .split ("")
-console.log(numberArr);
-
-var specialCharArray = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" .split("");
-console.log(specialCharArray);
-
-var logicArr = [];
-console.log(logicArr);
-
-var lowerCaseChoice = confirm("Do you want lower case?");
-var upperCaseChoice = confirm("Do you want upper case?");
-
-if (lowerCaseChoice) {
-  for(var i = 0; i < lowerCaseArr.length; i++) {
-    logicArr.push(lowerCaseArr[i]) 
-  } 
-  logicArr.push(lowerCaseArr)
-
-} else if (upperCaseChoice){ 
-    logicArr.push(upperCaseArr[i])
-  }
-  logicArr.push(upperCaseArr);
-  
   
 var container = document.querySelector("containter");
 console.log(container);
@@ -56,19 +65,18 @@ function writePassword() {
   passwordText.value = password;
 
 }
+generateBtn.addEventListener("click", writePassword);
+// var userChoice = 9;
 
-var userChoice = 9;
+// var logicArr = []
+// for(var i = 0; i , userChoice; i++){
+//   finalArr.push(logicArr[Math.floor(Math.random() * logicArr.length)]);
 
-var logicArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!"]
-
-for(var i = 0; i , userChoice; i++){
-  finalArr.push(logicArr[Math.floor(Math.random() * logicArr.length)]);
-
-}
-console.log(finalArr.join(""))
+// }
+// console.log(finalArr.join(""))
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
 
 // //just a message
 // var passwordLength = prompt("Choose Password Length");
