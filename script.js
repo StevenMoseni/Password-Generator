@@ -14,7 +14,10 @@ for(var i = 0; i<password.length; i++){
   return finalPassword
 }
 
-var lowerCaseArr = "0123456789" .split ("")
+var lowerCaseArr = "abcdefghijklmnopqrstuvwxyz" .split("");
+var UpperCaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
+var numberArr = "0123456789" .split ("")
+var logicArr = [];
 var lowerCaseChoice = confirm("Do you want lower case?");
 if (lowerCaseChoice) {
 }else{
