@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-console.log(generateBtn);
+// console.log(generateBtn);
 
   function generatePassword(){
     var finalArray = [];
@@ -21,42 +21,43 @@ console.log(specialCharArray);
 var logicArr = [];
 // var finalArray = [];
 
-// console.log(logicArr);
+// console.log(finalPassword);
 
 var passwordLength= prompt("Choose Password length between 8-128.");
 var lowerCaseChoice = confirm("Do you want lower case?");
 var upperCaseChoice = confirm("Do you want upper case?");
 var numberChoie = confirm("would you like to include numbers?");
 var SpechCharChoice =confirm ("Would you like to include special characters?");
-// var password = passwordLength.value;
 
-// console.log(passwordLength);
-// console.log(passwordLengthPrompt.value)
 
-  }
+console.log(passwordLength);
+
+
 if (lowerCaseChoice) {
   for(var i = 0; i < lowerCaseArr.length; i++) {
   logicArr.push(lowerCaseArr[i]) 
-} 
+  } 
+}
 
 if (upperCaseChoice) { 
   for(var i = 0; i < upperCaseArr.length; i++) { 
   logicArr.push(upperCaseArr[i])
-  
+  }
 } 
 
 if (numberChoie) { 
   for(var i = 0; i < numberArr.length; i++) { 
   logicArr.push(numberArr[i])  
+  }
 }
 
 if (SpechCharChoice) { 
   for(var i = 0; i < specialCharArray.length; i++) { 
   logicArr.push(specialCharArray[i]) 
+  }
+}
 
-};
-
-console.log(finalArray)
+// console.log(finalArray)
 
  for(var i = 0; i<password.length; i++){
   var randomNumber = Math.floor(Math.random()*finalArray.length);
@@ -65,6 +66,7 @@ console.log(finalArray)
 }
 
   return finalPassword
+  console.log(finalPassword);
 }
 
 
