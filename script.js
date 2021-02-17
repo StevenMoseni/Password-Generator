@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// console.log(generateBtn);
+console.log(generateBtn);
 
   function generatePassword(){
     var finalArray = [];
@@ -26,9 +26,9 @@ var logicArr = [];
 var passwordLength= prompt("Choose Password length between 8-128.");
 var lowerCaseChoice = confirm("Do you want lower case?");
 var upperCaseChoice = confirm("Do you want upper case?");
-var numberChoie = confirm("would you like to include numbers?");
+var numberChoice = confirm("would you like to include numbers?");
 var SpechCharChoice =confirm ("Would you like to include special characters?");
-
+// var lengthChoice = pas
 
 console.log(passwordLength);
 
@@ -45,7 +45,7 @@ if (upperCaseChoice) {
   }
 } 
 
-if (numberChoie) { 
+if (numberChoice) { 
   for(var i = 0; i < numberArr.length; i++) { 
   logicArr.push(numberArr[i])  
   }
@@ -57,7 +57,7 @@ if (SpechCharChoice) {
   }
 }
 
-// console.log(finalArray)
+console.log(finalArray)
 
  for(var i = 0; i<password.length; i++){
   var randomNumber = Math.floor(Math.random()*finalArray.length);
